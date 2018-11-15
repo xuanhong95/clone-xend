@@ -1,0 +1,64 @@
+.navbar-header{
+    width: 100%;
+}
+
+.navbar-inverse {
+    background-color: #fff;
+    border-color: #ffffff;
+}
+
+.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover{
+    color: orange;
+    background: white;
+}
+
+.navbar-inverse .navbar-nav>li>a:focus, .navbar-inverse .navbar-nav>li>a:hover{
+    color: orange
+}
+
+#logo-box{
+    float: left;
+}
+
+#lang-country-box {
+    float: left;
+    margin-left: 18px;
+    margin-top: 15px;
+}
+
+#language-label{
+    display: inline-flex;
+}
+
+.blue-text {
+    color: #239fd9;
+}
+
+.region-lang-country-box{
+    display: inline-flex;
+}
+
+#myNavbar{
+    float: right;
+}
+
+.white-link, a.white-link, a.white-link:hover, a.white-link:visited {
+    color: #FFFFFF!important;
+    text-decoration: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.blue-bg {
+    background: #239fd9!important;
+}
+
+a:hover, a:focus {
+    color: #005580;
+    text-decoration: underline;
+}
+
+.upper-letter > li > a.blue-text{
+    text-transform: uppercase;
+    color: #239fd9;
+}
