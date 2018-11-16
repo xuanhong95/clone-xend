@@ -4,12 +4,14 @@ import { relative } from 'path';
 
 const handleSubmit = (e) => {
     e.preventDefault();
-    console.log(e.target[0].value)
-    // this.props.form.validateFields((err, values) => {
-    //     if (!err) {
-    //         console.log('Received values of form: ', values);
-    //     }
-    // });
+    let params = {
+        name: e.target[0].value,
+        phone: e.target[1].value,
+        amount: e.target[2].value,
+        purpose: e.target[3].value,
+    }
+    console.log(params)
+    alert("kiểm tra param bắn lên ở console.log")
 }
 
 const Dashboard = (props) => {
@@ -51,7 +53,7 @@ const Dashboard = (props) => {
                                                             <textarea type="purpose" className="form-control" placeholder="Quốc gia cần gửi; mục đích gửi tiền;..." rows={4} required />
                                                         </div>
                                                         <div className="button-send-now col-md-5 col-sm-5 col-xs-5 col-lg-5 nopadding">
-                                                            <button onClick={(value) => console.log(value)} type="submit" className="widget-element widget-snap style-1" style={{ cursor: 'pointer', zIndex: 2, pointerEvents: 'auto' }}>GỬI NGAY</button>
+                                                            <button type="submit" className="widget-element widget-snap style-1" style={{ cursor: 'pointer', zIndex: 2, pointerEvents: 'auto' }}>GỬI NGAY</button>
                                                         </div>
                                                         <span>
                                                             <div className="col-md-2 col-sm-2 col-xs-2 col-lg-2" style={{ width: 85 }}>
@@ -59,7 +61,7 @@ const Dashboard = (props) => {
                                                             </div>
                                                             <div className="contact-infor col-md-4 col-sm-4 col-xs-4 col-lg-4 nopadding">
                                                                 <span>Hoặc gọi ngay:</span>
-                                                                <br/>
+                                                                <br />
                                                                 <span className="red-txt">+84 973 658 512</span>
                                                             </div>
                                                         </span>
