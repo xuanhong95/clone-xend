@@ -61,4 +61,14 @@ a:hover, a:focus {
 .upper-letter > li > a.blue-text{
     text-transform: uppercase;
     color: #239fd9;
+    padding: 10px 8px;
+}
+
+.blue-bg.txtct.text-bold.rounded4.white-link.inline-button.paddl10.paddr10.paddt5.paddb5{
+    padding: 10px 8px;
+}
+
+.navbar-inverse .navbar-toggle .icon-bar{
+    color: #239fd9;
+    background-color: #239fd9;
 }

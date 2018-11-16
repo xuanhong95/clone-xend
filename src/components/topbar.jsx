@@ -9,7 +9,7 @@ class Topbar extends Component {
     render() {
         return (
             <nav className="navbar navbar-inverse">
-                <div className="container-fluid">
+                <div className="container container-fluid">
                     <div className="navbar-header">
                         <button type="button" className="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
                             <span className="icon-bar"></span>
@@ -27,7 +27,7 @@ class Topbar extends Component {
                         <div id="lang-country-box">
                             <div className="lang-country-wrapper span12">
                                 <div className="region region-lang-country-box">
-                                    <div className="dropdown">
+                                    <div className="dropdown" style={{ fontSize: 12 }}>
                                         <div id="language-label" className="blue-text margr13 size14 dropdown-toggle" data-toggle="dropdown">
                                             <div className="margr5 pull-left size14">Language</div>
                                             &nbsp;
@@ -56,7 +56,7 @@ class Topbar extends Component {
                                         </ul>
                                     </div>
                                     &nbsp; &nbsp; &nbsp;
-                                    <div className="dropdown">
+                                    <div className="dropdown" style={{ fontSize: 12 }}>
                                         <div id="language-label" className="blue-text margr13 size14 dropdown-toggle" data-toggle="dropdown">
                                             <div className="margr5 pull-left size14">Vietnam</div>
                                             &nbsp;
@@ -88,7 +88,7 @@ class Topbar extends Component {
                             </div>
                         </div>
 
-                        <div className="collapse navbar-collapse" id="myNavbar" style={{marginTop: 10}}>
+                        <div className="collapse navbar-collapse" id="myNavbar" style={{ marginTop: 10 }}>
                             <ul className="nav navbar-nav upper-letter">
                                 <li className="active"><a className="blue-text" href="#">Business</a></li>
                                 <li><a className="blue-text" href="#">News</a></li>

@@ -1,15 +1,98 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom'
+import { relative } from 'path';
+
+const handleSubmit = (e) => {
+    e.preventDefault();
+    console.log(e.target[0].value)
+    // this.props.form.validateFields((err, values) => {
+    //     if (!err) {
+    //         console.log('Received values of form: ', values);
+    //     }
+    // });
+}
 
 const Dashboard = (props) => {
     return (
         <div>
             <div className="container main">
                 {/* image top */}
-                <div className="jumbotron">
-                    <div className="container text-center">
-                        <h1>My Portfolio</h1>
-                        <p>Some text that represents "Me"...</p>
+                <div id="main-slider" style={{ zIndex: 0 }}>
+                    <div id="block-block-17" className="container-fluid platform-holder paddr0 paddl0 block block-block">
+                        <div className="container container-fluid paddl0 margt20 paddt20">
+                            <div className="col-md-12 col-sm-12 col-xs-12 col-lg-12" style={{ position: relative }}>
+                                <div className="col-md-6 paddl0 intro-text-box">
+                                    <div className="col-md-12">
+                                        <h2 className="dark-blue-txt intro-text-1">FAIR, FAST, SAFE</h2>
+                                        <div className="paddl0 paddr0 dark-blue-txt intro-text-2">Low cost global money transfers</div>
+                                    </div>
+                                </div>
+                                <div id="BOX64" className="col-md-6 paddl0 intro-text-box">
+                                    <div className="container-fluid widget-content">
+                                        <div id="HEADLINE65" className="widget-element widget-snap">
+                                            <h2 className="widget-content" lp-node="h2">
+                                                <span style={{ fontWeight: 'bold' }}>ĐĂNG KÍ NHẬN TƯ VẤN MIỄN PHÍ</span>
+                                            </h2>
+                                        </div>
+                                        <div id="GROUP6" className="widget-element widget-snap widget-group">
+                                            <div className="widget-content">
+                                                <div id="FORM7" className="widget-element widget-snap">
+                                                    <form onSubmit={handleSubmit}>
+                                                        <div className="form-group">
+                                                            <input type="name" className="form-control" placeholder="Họ và tên" required />
+                                                        </div>
+                                                        <div className="form-group col-md-5 col-sm-5 col-xs-5 col-lg-5 box64">
+                                                            <input type="phone" className="form-control" placeholder="Nhập số điện thoại" required />
+                                                        </div>
+                                                        <div className="form-group col-md-7 col-sm-7 col-xs-7 col-lg-7 box64">
+                                                            <input type="amount" className="form-control" placeholder="Số tiền cần gửi" required />
+                                                        </div>
+                                                        <div className="form-group">
+                                                            <textarea type="purpose" className="form-control" placeholder="Quốc gia cần gửi; mục đích gửi tiền;..." rows={4} required />
+                                                        </div>
+                                                        <div className="button-send-now col-md-5 col-sm-5 col-xs-5 col-lg-5 nopadding">
+                                                            <button onClick={(value) => console.log(value)} type="submit" className="widget-element widget-snap style-1" style={{ cursor: 'pointer', zIndex: 2, pointerEvents: 'auto' }}>GỬI NGAY</button>
+                                                        </div>
+                                                        <span>
+                                                            <div className="col-md-2 col-sm-2 col-xs-2 col-lg-2" style={{ width: 85 }}>
+                                                                <svg xmnls="https://www.w3.org/2000/svg" xmlnsXlink="https://www.w3.org/1999/xlink" viewBox="0 0 24 24" fill="rgba(213,0,0,1)"> <path d="M15,12H17A5,5 0 0,0 12,7V9A3,3 0 0,1 15,12M19,12H21C21,7 16.97,3 12,3V5C15.86,5 19,8.13 19,12M20,15.5C18.75,15.5 17.55,15.3 16.43,14.93C16.08,14.82 15.69,14.9 15.41,15.18L13.21,17.38C10.38,15.94 8.06,13.62 6.62,10.79L8.82,8.59C9.1,8.31 9.18,7.92 9.07,7.57C8.7,6.45 8.5,5.25 8.5,4A1,1 0 0,0 7.5,3H4A1,1 0 0,0 3,4A17,17 0 0,0 20,21A1,1 0 0,0 21,20V16.5A1,1 0 0,0 20,15.5Z"></path> </svg>
+                                                            </div>
+                                                            <div className="contact-infor col-md-4 col-sm-4 col-xs-4 col-lg-4 nopadding">
+                                                                <span>Hoặc gọi ngay:</span>
+                                                                <br/>
+                                                                <span className="red-txt">+84 973 658 512</span>
+                                                            </div>
+                                                        </span>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div id="SHAPE68" className="widget-element widget-snap wow tada animated">
+                                            <div className="widget-content">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="block-block-18" className="container-fluid platform-bottom deep-blue-bg margb30 paddr0 paddl0 block block-block">
+                        <div className="container">
+                            <div className="container-fluid paddt10 paddr0 paddb10 paddl0 container-raf" style={{ position: relative }}>
+                                <div className="row">
+                                    <div className="star col-md-2 col-sm-2 col-xs-2 col-lg-2 hidden-phone">
+                                        <img src="https://www.xendpay.com/sites/default/files/raf/raf-star.png" alt="" style={{ position: 'absolute' }} width="188" height="176" />
+                                    </div>
+                                    <div className="col-md-8 col-sm-8 col-xs-8 col-lg-8" style={{ lineHeight: '50px' }}>
+                                        <span className="white-text size18">Get rewarded - Refer unlimited friends and family to us and become a Xendpay Star!</span>
+                                    </div>
+                                    <div className="col-md-2 col-sm-2 col-xs-2 col-lg-2 txtrt">
+                                        <span className="white-text size28 linehgt50 underlined "><a href="/refer-a-friend">Learn more</a></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 {/* money transfererd right */}
@@ -59,7 +142,7 @@ const Dashboard = (props) => {
                             </div> */}
                         </div>
                         {/* <!-- XENDPAY BUSINESS --> */}
-                        <div className="container paddr0 paddb10 paddl0 container-xp-business">
+                        <div className="container paddr0 paddb10 paddl0 container-xendpay-business">
                             <div className="margl0">
                                 <div className="col-md-2 col-sm-2 col-xs-2 col-lg-2 margl0">
                                     Send pay
@@ -206,7 +289,7 @@ const Dashboard = (props) => {
                     </div>
                 </div>
             </div>
-        </div>
+        </div >
     )
 }
 export default Dashboard;
