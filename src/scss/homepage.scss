@@ -316,6 +316,15 @@ img {
     margin-top: 50px;
 }
 
+@media screen and (max-width: 767px){
+    .good-for-the-pocket{
+        text-align: center;
+    }
+    .offset-youtube{
+        margin-left: 33.3333%
+    }
+}
+
 @media screen and (min-width: 560px){
     #trust-pilot-box {
         height: 190px !important;

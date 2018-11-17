@@ -173,7 +173,7 @@ const Dashboard = (props) => {
                                     <span className="row-fluid col-md-12 col-sm-12 col-xs-12 col-lg-12 margl0 margb20">Your every contribution, every recommendation, matters.</span>
                                     <span className="row-fluid col-md-12 col-sm-12 col-xs-12 col-lg-12 margl0 margb20"><a className="orange-link" href="pay-what-you-want">Pay What You Want. Find out more.</a></span>
                                 </div>
-                                <div className="col-md-4 col-sm-4 col-xs-4 col-lg-4">
+                                <div className="col-md-4 col-sm-4 col-xs-4 col-lg-4 offset-youtube">
                                     <div className="">
                                         {/* <img className="youtube" id="YJYRpTU0aPY" rel="YJYRpTU0aPY" style={{ cursor: "pointer" }} src="https://www.youtube.com/watch?v=YJYRpTU0aPY&feature=youtu.be" /> */}
                                         <a className="venobox vbox-item" target="_blank" data-type="youtube" href="http://youtu.be/YJYRpTU0aPY">
